@@ -740,3 +740,24 @@ ul.article-list { list-style: disc; }
   display: flex; align-items: center; justify-content: center;
 }
 .prose h3 { font-size: 1.18rem; margin-top: 1.8rem; color: var(--forest); }
+
+/* ---------- Parent-site bar (this is a section of akindaco.com) ---------- */
+.parent-bar { background: var(--ink); color: rgba(255,255,255,.72); font-size: .86rem; }
+.parent-bar-inner { display: flex; align-items: center; gap: 18px; min-height: 40px; flex-wrap: wrap; }
+.parent-bar a { color: rgba(255,255,255,.72); font-weight: 500; transition: color .2s; }
+.parent-bar a:hover { color: var(--sun); }
+.parent-bar-back { font-weight: 600 !important; color: #fff !important; }
+.parent-bar-back:hover { color: var(--sun) !important; }
+.parent-bar-nav { display: flex; gap: 18px; margin-left: auto; flex-wrap: wrap; }
+
+.brand-section {
+  font-family: var(--sans); font-size: .72rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--forest); background: var(--sage-soft);
+  padding: 4px 9px; border-radius: 999px; align-self: center;
+}
+
+@media (max-width: 700px) {
+  .parent-bar-nav { display: none; }
+  .parent-bar-inner { min-height: 36px; }
+}
